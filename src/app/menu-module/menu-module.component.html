@@ -1,0 +1,13 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item><mat-icon>notifications_off</mat-icon>Home</button>
+    <button mat-menu-item>Blog</button>
+    <button mat-menu-item>Blog</button>
+  </mat-menu>
+  <div class="sidenav-button">
+    <a (click)="drawer.toggle()"><i class="material-icons">menu</i></a>
+  </div>
+</mat-drawer-container>
